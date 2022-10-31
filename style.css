@@ -64,12 +64,15 @@ body {
   color: #333333;
   font-weight: 700;
   font-size: 15px;
-  border-bottom: 2px solid #333333;
   padding: 30px 0 10px;
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.todo-title {
+  border-bottom: 2px solid #333333;
+}
+.todo-wrapper .input-text,
+.edit-mode .input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,7 +84,7 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888888;
 }
-input[type="text"]:focus {
+.input-text:focus {
   color: #333333;
 }
 /* New Task */
@@ -104,39 +107,42 @@ input[type="text"]:focus {
 .todo-list_item > * {
   vertical-align: middle;
 }
-.input-check {
+.todo-list_item > .input-check {
   margin: 0 10px;
 }
-.todo-list_item > label {
+.todo-list_item > .task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.todo-list_item >  input[type="text"] {
+.todo-list_item > .input-text {
   width: 226px;
+  border: none;
+  padding: 0 9px;
 }
-.btn.delete img {
+.delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn.delete img:hover {
+.btn.delete .delete-img:hover {
   transform: rotateZ(0);
 }
 /* Completed */
-#completed-tasks label {
+#completed-tasks .task-label {
   text-decoration: line-through;
   color: #888888;
 }
 /* Edit Task */
-.todo-list .todo-list_item input[type="text"] {
+.todo-list .todo-list_item .input-text {
   display:none
 }
-.todo-list .edit-mode input[type="text"] {
+.todo-list .edit-mode .input-text {
   display: inline-block;
   width: 224px;
+  margin: 0;
 }
-.todo-list .edit-mode label {
+.todo-list .edit-mode .task-label {
   display: none;
 }

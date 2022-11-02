@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333333;
   font-family: Lato, sans-serif;
@@ -17,9 +17,11 @@ body {
   font-family: fantasy, cursive;
 }
 @media (max-width: 768px) {
+
   .info { 
     text-align: center;
   }
+
 }
 .todo {
   display: block;
@@ -56,7 +58,7 @@ body {
   cursor: pointer;
 }
 .btn:hover {
-  color: #3a3A3a;
+  color: #3a3a3a;
 }
 /* Heading */
 .todo-title,
@@ -78,8 +80,8 @@ body {
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
-  border: 1px solid #dDd;
-  background: #FFF;
+  border: 1px solid #ddd;
+  background: #ffffff;
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888888;
@@ -136,7 +138,7 @@ body {
 }
 /* Edit Task */
 .todo-list .todo-list_item .input-text {
-  display:none
+  display: none;
 }
 .todo-list .edit-mode .input-text {
   display: inline-block;
